@@ -24,12 +24,3 @@ menu.click(function () {
 resume.click(function () {
 	location.href = "";
 });
-
-vd.click(function () {
-	right.removeClass("translate");
-	right.css("transform", "translateX(50vw)")
-	$(".title").animate({left: "30vw"}, 800)
-	setTimeout(function () {
-		right.css("display", "none");
-	}, 1200);
-});
