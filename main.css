@@ -45,6 +45,13 @@ body {
   bottom: 0;
 }
 
+.right h1 {
+  font-family: roboto-slab, serif;
+  font-size: 10vh;
+  margin: 4vh 1vw 0px 2vw;
+  padding: 0px;
+}
+
 .right .menu {
   cursor: pointer;
   width: 5vw;
@@ -97,7 +104,7 @@ body {
 .right .right-bottom span {
   text-align: center;
   position: absolute;
-  top: -5vh;
+  top: -3vh;
   font-size: 2vh;
   font-family: roboto-slab, serif;
 }
@@ -118,7 +125,7 @@ body {
 
 .right .view {
   position: relative;
-  top: 10vh;
+  top: 0vh;
   right: -1vw;
 }
 
@@ -141,7 +148,7 @@ body {
   width: 95%;
   list-style-type: none;
   font-family: roboto-slab, serif;
-  height: calc(70vh / 4);
+  height: calc(70vh / 5);
   font-size: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,8 +161,8 @@ body {
   cursor: pointer;
   background-color: #F2F0ED;
   mix-blend-mode: screen;
-  margin-bottom: 4vh;
-  margin-top: 4vh;
+  margin-bottom: 7vh;
+  margin-top: 5vh;
   -webkit-box-shadow: 7px 8px 0px #d22717;
           box-shadow: 7px 8px 0px #d22717;
 }

@@ -14,10 +14,12 @@ menu.click(function () {
 		right.addClass("translate");
 		$(".right").attr("data", "unload");
 		$(".title").animate({left: "10vw"}, 600)
+		$(".title span").animate({left: "5vw"}, 400);
 	} else if ($(".right").attr("data") === "unload") {
 		right.removeClass("translate");
 		$(".right").attr("data", "load");
 		$(".title").animate({left: "30vw"}, 800)
+		$(".title span").animate({left: "10vw"}, 400);
 	}
 });
 
@@ -49,7 +51,7 @@ $(".links").hover(function () {
 		text.text("LinkedIn")
 	} else if (index == 2) {
 		text.text("Twitter")
-	} else {
+	} else if (index == 3) {
 		text.text("Resume Download")
 	}
 });
