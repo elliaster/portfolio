@@ -1,13 +1,38 @@
+$red: #E94333
+$blue: #005BA6
+
 body
      background: #08133E
      margin: 0px
      padding: 0px
      overflow: hidden
 
+#particles-js
+     height: 100vh
+     width: 100vw
+
+.title
+     font-family: sans-serif
+     color: white
+     font-size: 10vh
+     position: absolute
+     top: calc(50% - 35vh)
+     left: calc(50% - 20vw)
+     opacity: 0.8
+     text-shadow: 5px 5px 0px rgba(255,255,255,.5)
+
+     span
+          position: relative
+          left: 10vw
+          top: -10vh
+          font-size: 15vh
+
+
+
 .right
      width: 40vw
      height: 100vh
-     background-color: #2955D9
+     background-color: $blue
      position: absolute
      right: 0px
      transform: translateX(40vw)
@@ -17,7 +42,7 @@ body
           cursor: pointer
           width: 5vw
           height: 10vh
-          background-color: #FEDE39
+          background-color: $red
           color: white
           position: absolute
           left: -5vw
@@ -29,7 +54,7 @@ body
                content: ""
                width: 1.5vw
                height: 100vh
-               background-color: #FEDE39
+               background-color: $red
                border: 23px
                position: absolute
                top: -5vh
@@ -47,7 +72,7 @@ body
           position: relative
           width: 100%
           height: 15vh
-          background-color: #FEDE39
+          background-color: $red
           display: grid
           cursor: pointer
           z-index: 2
@@ -74,8 +99,12 @@ body
           div
                width: calc(100% / 3)
                height: 100%
-               border: 1px solid white
+               // border: 1px solid white
                cursor: pointer
+               transition: 200ms
+
+               &:hover
+                    background-color: #004C8B
 
                p
                     font-size: 5vh
@@ -93,3 +122,24 @@ body
 
 .translate
      transform: translateX(0vw)
+
+.sidebar
+     display: none
+     height: 100vh
+     width: 3.5vw
+     background-color: #FEDE39
+     position: absolute
+     z-index: 10
+     top: 0px
+     left: 0px
+
+     .icon-container
+          position: absolute
+          bottom: 7vh
+
+          .icon
+               border: 1px solid green
+               background-color: red
+               height: 7vh
+               width: 3.5vw
+               cursor: pointer

@@ -9,8 +9,10 @@
      <title>Final Portfolio</title>
 </head>
 <body>
-     <div class="container">
-          <!-- <h1>Akash <span>Hashan</span></h1> -->
+     <div class="container" id="particles-js">
+          <div class="title">
+               <h1>Akash <br> <span>Hashan</span></h1>
+          </div>
           <div class="right" data="load">
                <div class="menu">
                          <i class="fas fa-bars"></i>
@@ -31,8 +33,23 @@
                     </div>
                </div>
           </div>
+
+          <div class="sidebar">
+               <div class="icon-container">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+               </div>
+          </div>
      </div>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="node_modules\particles.js\particles.js"></script>
      <script src="main.js"></script>
+     <script>
+          particlesJS.load('particles-js', 'assets/particles.json', function() {
+               console.log('callback - particles.js config loaded');
+          });
+     </script>
 </body>
 </html>

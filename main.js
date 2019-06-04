@@ -13,12 +13,23 @@ menu.click(function () {
 	if ($(".right").attr("data") === "load") {
 		right.addClass("translate");
 		$(".right").attr("data", "unload");
+		$(".title").animate({left: "10vw"}, 600)
 	} else if ($(".right").attr("data") === "unload") {
 		right.removeClass("translate");
 		$(".right").attr("data", "load");
+		$(".title").animate({left: "30vw"}, 800)
 	}
 });
 
 resume.click(function () {
 	location.href = "";
+});
+
+vd.click(function () {
+	right.removeClass("translate");
+	right.css("transform", "translateX(50vw)")
+	$(".title").animate({left: "30vw"}, 800)
+	setTimeout(function () {
+		right.css("display", "none");
+	}, 1200);
 });
