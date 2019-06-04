@@ -55,3 +55,9 @@ $(".links").hover(function () {
 		text.text("Resume Download")
 	}
 });
+
+$("#vd").click(function () {
+	$(".view").animate({
+		
+	}, 1200);
+});

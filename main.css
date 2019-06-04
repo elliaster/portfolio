@@ -117,6 +117,8 @@ body {
   cursor: pointer;
   -webkit-transition: 200ms;
   transition: 200ms;
+  -webkit-transform: translate(-1vw);
+          transform: translate(-1vw);
 }
 
 .right .right-bottom ul li:hover {
