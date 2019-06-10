@@ -9,7 +9,7 @@ const
 	right = $(".right")
 ;
 
-menu.click(function () {
+menu.click(function close () {
 	if ($(".right").attr("data") === "load") {
 		right.addClass("translate");
 		$(".right").attr("data", "unload");
@@ -57,7 +57,24 @@ $(".links").hover(function () {
 });
 
 $("#vd").click(function () {
-	$(".view").animate({
-		
-	}, 1200);
+	$("<div>").appendTo(".content").addClass("visual-design").animate({
+		width: "100vw"
+	}, 800);
+
+	right.removeClass("translate");
+	$(".right").attr("data", "load");
+	$(".title").animate({left: "30vw"}, 800)
+	$(".title span").animate({left: "10vw"}, 400);
+
+	$(".view-cont h1").animate({
+		right: "3.5vw"
+	},400);
+	setTimeout(() => {
+		$("<button>").appendTo(".view-cont").addClass("homebtn");
+	}, 600);
+	
+});
+
+$(".homebtn").click(function () {
+	
 });

@@ -1,0 +1,35 @@
+<table>
+		<tr>
+			<td><span class="indexTitle" id="lab">Lab Index</span></td>
+			<td><a href="javascript:void(0)" class="closebtn" onclick="closeNav(); hideLab()">&times;</a> </td>
+		</tr>
+	</table>
+	
+	<a href="Lab_1/Lab_1.html" target="frameId" onClick="document.title = 'Lab 1';">Lab 1</a>
+	<a href="Lab_2/lab_2.html" target="frameId" onClick="document.title = 'Lab 2';">Lab 2</a>
+	<a href="Lab_3/lab_3.html" target="frameId" onClick="document.title = 'Lab 3';">Lab 3</a>
+	<a href="Lab_4/Lab_4.html" target="frameId" onClick="document.title = 'Lab 4';">Lab 4</a>
+	<a href="Lab_5/Lab_5.html" target="frameId" onClick="document.title = 'Lab 5';">Lab 5</a>
+	<a href="Lab_6/Lab_6.html" target="frameId" onClick="document.title = 'Lab 6';">Lab 6</a>
+	<a href="Lab_7/Lab_7.html" target="frameId" onClick="document.title = 'Lab 7';">Lab 7</a>
+	<a href="../index.html" target="_top">Lab 8</a>
+	<a href="#" target="_top">Lab 9</a>
+	<a href="Lab_10/Lab_10.html" target="frameId" onClick="document.title = 'Lab 10';">Lab 10</a>
+	<a href="Lab_11/Lab_11.html" target="frameId" onClick="document.title = 'Lab 11';">Lab 11</a>
+	<a href="Lab_12/Lab_12.html" target="frameId" onClick="document.title = 'Lab 12';">Lab 12</a>
+	<a href="Lab_13/Lab_13.html" target="frameId" onClick="document.title = 'Lab 13';">Lab 13</a>
+	<a href="Lab_14/Lab_14.html" target="frameId" onClick="document.title = 'Lab 14';">Lab 14</a>
+	<a href="Lab_15/Lab_15.html" target="frameId" onClick="document.title = 'Lab 15';">Lab 15</a>
+	<a href="Lab_16/Lab_16.html" target="frameId" onClick="document.title = 'Lab 16';">Lab 16</a>
+	<a href="Lab_17/Lab_17.html" target="frameId" onClick="document.title = 'Lab 17';">Lab 17</a>
+	<a href="Lab_18/lab_18.html" target="frameId" onClick="document.title = 'Lab 18';">Lab 18</a>
+	<a href="Lab_19/Lab_19.html" target="frameId" onClick="document.title = 'Lab 19';">Lab 19</a>
+	<a href="Lab_20/Lab_20.html" target="frameId" onClick="document.title = 'Lab 20';">Lab 20</a>
+	<a href="Lab_21/Lab_21.html" target="frameId" onClick="document.title = 'Lab 21';">Lab 21</a>
+	<a href="" target="_top" style="text-decoration: line-through;">Lab 22</a>
+	<div style="height: 100px;"></div>
+	</div>
+	<div id="lineVer">
+		<span class="menu" id="spanMenu" style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
+		<span class="menu" style="font-size:30px;cursor:pointer; color: white;"><a href="../index.html">&#8962;</a></span>
+	</div>
