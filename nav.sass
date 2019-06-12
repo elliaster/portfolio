@@ -2,34 +2,7 @@ $red: #E94333
 $white: #F2F0ED
 $font: helvetica, sans-serif
 $slab: roboto-slab, serif
-
-body
-     background: #242C3F
-     margin: 0px
-     padding: 0px
-     overflow: hidden
-     color: $white
-
-#particles-js
-     height: 100vh
-     width: 100vw
-
-.title
-     font-family: $font
-     color: $white
-     font-size: 10vh
-     position: absolute
-     top: calc(50% - 35vh)
-     left: calc(50% - 20vw)
-     opacity: 0.8
-     text-shadow: 5px 2px 0px rgba(255,255,255,.5)
-
-     span
-          position: relative
-          left: 10vw
-          top: -10vh
-          font-size: 15vh
-
+    
 .right
      width: 40vw
      height: 100vh
@@ -41,6 +14,7 @@ body
      font-family: $font
      bottom: 0
      z-index: 5
+     color: $white
 
      h1  
           width: 100%
@@ -154,61 +128,3 @@ body
 
 .translate
      transform: translateX(0vw)
-
-.visual-design
-     width: 0px
-     height: 100vh
-     position: absolute
-     background-color: darken(cyan, 25%)
-     opacity: 0.5
-     z-index: 3
-     top: 0.0vh
-     left: 0px
-
-.digital-design
-     width: 0px
-     height: 100vh
-     position: absolute
-     background-color: darken(red, 25%)
-     opacity: 0.5
-     z-index: 3
-     top: 0.0vh
-     left: 0px
-
-.webcp
-     width: 0px
-     height: 100vh
-     position: absolute
-     background-color: darken(green, 25%)
-     opacity: 0.5
-     z-index: 3
-     top: 0.0vh
-     left: 0px
-
-.homebtn
-     position: absolute
-     top: 4.75vh
-     right: 4vw
-     border: 0px
-     width: 5vw
-     height: 10vh
-     font-size: 100px
-     margin: 0px
-     padding: 0px
-     color: white
-     background: transparent
-     cursor: pointer
-
-     &:after
-          content: '☖'
-          position: absolute
-          top: -2vh
-          left: 0.5vw
-
-.vd-frame
-     position: absolute
-     width: 96vw
-     height: 100vh
-     border: 12px solid red
-     top: 0px
-     left: 0px

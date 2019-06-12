@@ -15,6 +15,7 @@ menu.click(function close () {
 		$(".right").attr("data", "unload");
 		$(".title").animate({left: "10vw"}, 600)
 		$(".title span").animate({left: "5vw"}, 400);
+		$(".right").animate({transform: "translateX(40vw)"}, 800);
 	} else if ($(".right").attr("data") === "unload") {
 		right.removeClass("translate");
 		$(".right").attr("data", "load");
@@ -57,24 +58,81 @@ $(".links").hover(function () {
 });
 
 $("#vd").click(function () {
-	$("<div>").appendTo(".content").addClass("visual-design").animate({
-		width: "100vw"
-	}, 800);
+	if ($(".visual-design").length) {
+		return false;
+	}
+	else {
+		removeSlides();
+		$("<div>").appendTo(".content").addClass("visual-design").animate({
+			width: "100vw"
+		}, 800);
+		setTimeout(function () {
+			$("<iframe name='frameId'>").addClass("vd-frame").attr("href", "load.html");
+		}, 1000);
+		right.removeClass("translate");
+		$(".right").attr("data", "load");
+		$(".title").animate({left: "30vw"}, 800)
+		$(".title span").animate({left: "10vw"}, 400);
+		$("#menu-icon").attr("class", "fas fa-home");
+	}
+});
 
-	right.removeClass("translate");
-	$(".right").attr("data", "load");
-	$(".title").animate({left: "30vw"}, 800)
-	$(".title span").animate({left: "10vw"}, 400);
+$("#dd").click(function () {
+	if ($(".digital-design").length) {
+		alert("Exists")
+		return false;
+	}
+	else {
+		removeSlides();
+		$("<div>").appendTo(".content").addClass("digital-design").animate({
+			width: "100vw"
+		}, 800);
+		right.removeClass("translate");
+		$(".right").attr("data", "load");
+		$(".title").animate({left: "30vw"}, 800)
+		$(".title span").animate({left: "10vw"}, 400);
+		$("#menu-icon").attr("class", "fas fa-home");
+	}
+});
 
-	$(".view-cont h1").animate({
-		right: "3.5vw"
-	},400);
-	setTimeout(() => {
-		$("<button>").appendTo(".view-cont").addClass("homebtn");
-	}, 600);
-	
+$("#wcp").click(function () {
+	if ($(".webClient-progamming").length) {
+		return false;
+	}
+	else {
+		removeSlides();
+		$("<div>").appendTo(".content").addClass("webcp").animate({
+			width: "100vw"
+		}, 800);
+		right.removeClass("translate");
+		$(".right").attr("data", "load");
+		$(".title").animate({left: "30vw"}, 800)
+		$(".title span").animate({left: "10vw"}, 400);
+		$("#menu-icon").attr("class", "fas fa-home");
+	}
 });
 
 $(".homebtn").click(function () {
-	
+	removeSlides();
+	$(".view-cont h1").animate({
+		right: "-3.5vw"
+	},400);
 });
+
+function removeSlides() {
+	$(".digital-design").remove();
+	$(".visual-design").remove();
+	$(".webcp").remove();
+	$(".homebtn").remove();
+}
+
+$("#menu-icon").click(function () {
+	if ($("#menu-icon").attr("class") == "fas fa-home") {
+		removeSlides();
+		$(this).attr("class", "fas fa-bars");
+		right.addClass("translate");
+		$(".right").attr("data", "unload");
+		$(".title").animate({left: "10vw"}, 600)
+		$(".title span").animate({left: "5vw"}, 400);
+	}
+})
